@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.env": "dotenv",
+        "*.env.secret": "dotenv"
+    },
+    "github.copilot.enable": {
+        "dotenv": false,
+    }
+}

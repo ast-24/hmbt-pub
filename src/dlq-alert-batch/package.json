@@ -1,0 +1,20 @@
+{
+  "name": "@ast24/hmbt-v5-dlq-alert-batch",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:lib": "npm --prefix ../lib install && npm --prefix ../lib run build",
+    "build": "npm run build:lib && npm install && bash ./build.sh",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@ast24/hmbt-v5-lib": "file:../lib"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.151",
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.25.10",
+    "typescript": "^5.9.2"
+  }
+}

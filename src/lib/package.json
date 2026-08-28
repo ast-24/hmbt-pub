@@ -1,0 +1,25 @@
+{
+  "name": "@ast24/hmbt-v5-lib",
+  "version": "0.0.1",
+  "description": "Shared TypeScript library for hmbt-v5 (data models and utilities)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "npx tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "jose": "^6.1.0",
+    "nanoid": "^5.1.6"
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "hmbt-v5-admin-alert",
+    "main": "src/index.ts",
+    "compatibility_date": "2026-04-07",
+    "observability": {
+        "enabled": true
+    },
+    "routes": [
+        {
+            "pattern": "adminalert-hmbt.ast24.dev",
+            "zone_name": "ast24.dev",
+            "custom_domain": true
+        }
+    ],
+    "workers_dev": false,
+    "preview_urls": false
+}

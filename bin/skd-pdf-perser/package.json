@@ -1,0 +1,10 @@
+{
+  "name": "at-hmbt-pdf-parser",
+  "version": "1.0.0",
+  "description": "PDF parser for schedule",
+  "main": "index.mjs",
+  "type": "module",
+  "dependencies": {
+    "pdfjs-dist": "^5.4.54"
+  }
+}

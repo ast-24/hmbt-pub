@@ -1,0 +1,19 @@
+{
+  "name": "hmbt-migrate-next-train-widget",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:lib": "cd ../../src/lib && npm install && npm run build",
+    "migrate": "npm run build:lib && tsx src/index.ts"
+  },
+  "dependencies": {
+    "@ast24/hmbt-v5-lib": "file:../../src/lib",
+    "@tidbcloud/serverless": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@ast24/hmbt-v5-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:lib && npm install && ./build.sh",
+    "build:lib": "cd ../lib && npm install && npm run build",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@ast24/hmbt-v5-lib": "file:../lib",
+    "@aws-sdk/client-cloudwatch-logs": "^3.924.0",
+    "@aws-sdk/client-s3": "^3.924.0",
+    "@aws-sdk/client-sqs": "^3.924.0",
+    "@node-rs/argon2": "^2.0.2",
+    "@tidbcloud/serverless": "^0.3.0",
+    "hono": "^4.10.1",
+    "jose": "^6.1.0",
+    "node-addon-api": "^8.5.0",
+    "node-gyp": "^12.2.0",
+    "sharp": "^0.34.4"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.151",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.2"
+  }
+}

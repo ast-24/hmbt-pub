@@ -1,0 +1,18 @@
+{
+  "name": "hmbt-system-role-jwt-cli",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:lib": "cd ../../src/lib && npm install && npm run build",
+    "generate": "npm run build:lib && tsx src/index.ts"
+  },
+  "dependencies": {
+    "@ast24/hmbt-v5-lib": "file:../../src/lib"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
